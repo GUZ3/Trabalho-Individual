@@ -1,41 +1,104 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Sua JoinLoja - Página Inicial</title>
     <link rel="stylesheet" href="../adm/css/pagina.css">
     <link rel="shortcut icon" href="../imgJoinLoja/FaviconJoinLoja.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="sidebar">
-        <div>
-            <a href="#"><img src="../img/logoZtechTransparente.png" alt="Logo com redirecionamento a loja" class="logo-sidebar"></a>
-        </div>
+    <aside class="sidebar">
+        <a href="#" class="brand">
+            <img src="../imgJoinLoja/IconJoinLoja.png" alt="Logo JoinLoja" class="sidebar-icon">
+            <span>Sua JoinLoja</span>
+        </a>
 
-        <div>
-                <ul>
-                    <div>
-                        <li><a href="#">Sua JoinLoja</a></li>
-                        <li><a href="#">Dashboard</a></li>
-                    </div>
+        <nav>
+            <ul class="sidebar-ul">
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#">Sua JoinLoja</a></li>
+            </ul>
 
-                    <div class="gerenciamento">
-                        <h2 class="subtitulo-sidebar">Gerenciamento</h2>
-                        <li><a href="#">Cadastro de produtos</a></li>
-                        <li><a href="#">Cadastro de fornecedores</a></li>
-                        <li><a href="#">Clientes</a></li>
-                        <li><a href="#">Pedidos</a></li>
-                    </div>
-
-                    <div class="personalizacao">
-                        <h2 class="subtitulo-sidebar">Personalização</h2>
-                        <li><a href="#">Personalização</a></li>
-                        <li>Darkmode <input type="checkbox"></li>
-                    </div>  
+            <div class="menu-group">
+                <h2 class="subtitulo-sidebar">Gerenciamento</h2>
+                <ul class="sidebar-ul">
+                    <li><a href="#">Cadastro de produtos</a></li>
+                    <li><a href="#">Cadastro de fornecedores</a></li>
+                    <li><a href="#">Clientes</a></li>
+                    <li><a href="#">Pedidos</a></li>
                 </ul>
-        </div>
-    </div>
+            </div>
 
+            <div class="menu-group">
+                <h2 class="subtitulo-sidebar">Personalização</h2>
+                <ul class="sidebar-ul">
+                    <li><a href="#">Configurações</a></li>
+                    <li class="toggle-row">
+                        <span>Darkmode</span>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <header class="topbar">
+            <div>
+                <p class="breadcrumb">Painel / Administração</p>
+                <h1>Bem-vindo à sua JoinLoja</h1>
+                <p class="subtitle">Gerencie produtos, pedidos e clientes com facilidade.</p>
+            </div>
+            <div class="user-card">
+                <span>Administrador</span>
+            </div>
+        </header>
+
+        <section class="cards">
+            <article class="card">
+                <span class="card-title">Produtos</span>
+                <strong>128</strong>
+                <p>Visão geral do estoque e cadastro rápido.</p>
+            </article>
+            <article class="card">
+                <span class="card-title">Fornecedores</span>
+                <strong>24</strong>
+                <p>Controle suas parcerias e novos contatos.</p>
+            </article>
+            <article class="card">
+                <span class="card-title">Clientes</span>
+                <strong>764</strong>
+                <p>Visualize dados de clientes e histórico de pedidos.</p>
+            </article>
+        </section>
+
+        <section class="dashboard-panel">
+            <div class="panel-header">
+                <h2>Resumo rápido</h2>
+                <p>Acompanhe o desempenho da sua loja em um só lugar.</p>
+            </div>
+            <div class="panel-content">
+                <div class="panel-block">
+                    <h3>Pedidos pendentes</h3>
+                    <p>15</p>
+                </div>
+                <div class="panel-block">
+                    <h3>Vendas esta semana</h3>
+                    <p>R$ 8.420,00</p>
+                </div>
+                <div class="panel-block">
+                    <h3>Novos clientes</h3>
+                    <p>32</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
